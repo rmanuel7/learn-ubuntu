@@ -52,7 +52,7 @@ Package managers are used to install, upgrade, and remove applications in Linux.
   sudo nano /etc/systemd/system/kestrel-helloapp.service
   ```
 
-- The following example is an .ini service file for the app:
+- The following example is an `.ini` service file for the app:
   ```txt
   [Unit]
   Description=Example .NET Web API App running on Linux
