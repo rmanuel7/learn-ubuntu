@@ -73,7 +73,15 @@ Package managers are used to install, upgrade, and remove applications in Linux.
   WantedBy=multi-user.target
   ```
 
+- Save the file and enable the service. Start the service and verify that it's running.
+  ```bash
+  sudo systemctl enable kestrel-helloapp.service
+  sudo systemctl start kestrel-helloapp.service
+  sudo systemctl status kestrel-helloapp.service
+  ```
+
 ### Test the web site from another terminal.
+
 - Run `netstat` together with the `-tlp` switch
   ```bash
   netstat -tlp
