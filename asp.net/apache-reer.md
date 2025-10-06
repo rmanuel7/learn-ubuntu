@@ -115,15 +115,15 @@ sudo a2enmod rewrite
 
 To configurate the server proxy funcionality we should change `000-default.conf` configuration file that is found in `/etc/apache2/sites-enabled` directory:
 ```ini
-<VirtualHost *:80> 
-    RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
+<VirtualHost *:80>
+    ServerName apps.rmanuel.dev
+
     ProxyPreserveHost On
-    ProxyPass / http://localhost:1234/
-    ProxyPassReverse / http://localhost:1234/
-    ServerName www.test.brandnewsite.co.za
-    ServerAlias test.brandnewsite.co.za
-    ErrorLog ${APACHE_LOG_DIR}/error-brandnewsite.log  
-    CustomLog ${APACHE_LOG_DIR}/access-brandnewsite.log combined 
+    ProxyPass / http://127.0.0.1:5000/
+    ProxyPassReverse / http://127.0.0.1:5000/
+
+    ErrorLog ${APACHE_LOG_DIR}/apps_error.log
+    CustomLog ${APACHE_LOG_DIR}/apps_access.log combined
 </VirtualHost>
 ```
 
