@@ -80,12 +80,17 @@ Package managers are used to install, upgrade, and remove applications in Linux.
   sudo systemctl status kestrel-helloapp.service
   ```
 
-### Test the web site from another terminal.
+### View logs
+To view the kestrel-helloapp.service-specific items, use the following command:
+```bash
+sudo journalctl -fu kestrel-helloapp.service
+```
 
-- Run `netstat` together with the `-tlp` switch
-  ```bash
-  netstat -tlp
-  ```
+### Test the web site from another terminal.
+Run `netstat` together with the `-tlp` switch
+```bash
+netstat -tlp
+```
 
 <br/><br/>
 **References**
