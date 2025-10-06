@@ -131,3 +131,8 @@ We need restart Apache server so our changes take effect:
 ```bash
 sudo systemctl restart apache2
 ```
+
+<br/><br/>
+**References**
+1. [Medium: Running our asp.net core apps using Apache server with ...](https://medium.com/@sebishenzenn/running-ours-asp-net-core-apps-using-apache-server-with-reverse-proxy-c0784ae7babd)
+2. [Microsoft: Configure Nginx as reverse proxy to route the requests to your ASP.NET Core application](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnetcore/practice-troubleshoot-linux/2-2-install-nginx-configure-it-reverse-proxy#configure-nginx-as-reverse-proxy-to-route-the-requests-to-your-aspnet-core-application)
