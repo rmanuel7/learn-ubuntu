@@ -107,6 +107,7 @@ netstat -tlp
 We enable the modules by running this command:
 ```bash
 sudo apt install apache2
+sudo a2enmod ssl
 sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod headers
